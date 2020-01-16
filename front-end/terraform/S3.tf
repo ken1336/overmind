@@ -1,9 +1,9 @@
-
 provider "aws" {
   version = "~> 2.0"
   region  = "ap-northeast-2"
 }
 resource "aws_s3_bucket" "static_hosting" {
+
   bucket = "www.overmind.com"
   acl    = "public-read"
   website {
