@@ -1,4 +1,4 @@
-import React, { Component,Fragment } from 'react';
+import React, { Component, Fragment } from 'react';
 
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
@@ -11,42 +11,42 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
     card: {
-      minWidth: 275,
+        minWidth: 275,
     },
     bullet: {
-      display: 'inline-block',
-      margin: '0 2px',
-      transform: 'scale(0.8)',
+        display: 'inline-block',
+        margin: '0 2px',
+        transform: 'scale(0.8)',
     },
     title: {
-      fontSize: 14,
+        fontSize: 14,
     },
     pos: {
-      marginBottom: "200px",
+        marginBottom: "200px",
     },
-  });
+});
 
-  
-  export default () => {
+
+export default () => {
     const classes = useStyles();
     return (
         <Card className={classes.card} variant="outlined">
-           <CardContent>
-        <Typography className={classes.title} color="textSecondary" gutterBottom>
-          Word of the Day
+            <CardContent>
+                <Typography className={classes.title} color="textSecondary" gutterBottom>
+                    Name
         </Typography>
-        <Typography variant="h5" component="h2">
-         
+                <Typography variant="h5" component="h2">
+
+                </Typography>
+                <Typography className={classes.pos} color="textSecondary">
+                    Email
         </Typography>
-        <Typography className={classes.pos} color="textSecondary">
-          adjective
-        </Typography>
-        <Typography variant="body2" component="p">
-          well meaning and kindly.
+                <Typography variant="body2" component="p">
+                    Password
           <br />
-          {'"a benevolent smile"'}
-        </Typography>
-      </CardContent>
+                    {'This is test'}
+                </Typography>
+            </CardContent>
         </Card>
     );
 };
