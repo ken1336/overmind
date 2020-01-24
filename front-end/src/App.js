@@ -17,6 +17,7 @@ function App() {
         
         <Switch >
           <Route exact path="/" component={Home} />
+          <Route exact path="/home2" component={Home2} />
           {/* <Route exact path="/home2" component={Home2} /> */}
           {/* <Route exact path="/FunctionalFrame" component={FunctionalFrame} />
           <Route exact path="/AWSLambda" component={AWSLambda} />
